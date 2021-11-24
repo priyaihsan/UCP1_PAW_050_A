@@ -1,0 +1,60 @@
+﻿@model TokoBuku.Models.rakbuku
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>rakbuku</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nama_buku)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nama_buku)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.kategori_buku)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.kategori_buku)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.harga)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.harga)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.gambar_buku)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.gambar_buku)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.penerbit_buku)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.penerbit_buku)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.diskon)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.diskon)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.jumlah_buku)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.jumlah_buku)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id_buku">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
